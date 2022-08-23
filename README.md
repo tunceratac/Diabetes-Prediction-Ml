@@ -7,12 +7,12 @@ The dataset is part of the large dataset held at the National Institutes of Diab
 Data used for diabetes research on Pima Indian women aged 21 and over living in Phoenix, the 5th largest city of the State of Arizona in the USA.
 The target variable is specified as "outcome"; 1 indicates positive diabetes test result, 0 indicates negative.
 
-- Pregnancies Hamilelik sayısı
-- Glucose Oral glikoz tolerans testinde 2 saatlik plazma glikoz konsantrasyonu
-- Blood Pressure Kan Basıncı (Küçük tansiyon) (mm Hg)
+- Pregnancies: number of pregnancies
+- Glucose: 2-hour plasma glucose concentration in the oral glucose tolerance test
+- Blood Pressure: Blood Pressure (mm Hg)
 - SkinThickness
-- Insulin 2 saatlik serum insülini (mu U/ml)
-- DiabetesPedigreeFunction Soydaki kişilere göre diyabet olma ihtimalini hesaplayan bir fonksiyon
-- BMI Vücut kitle endeksi
+- Insulin: 2-hour serum insulin (mu U/ml)
+- DiabetesPedigreeFunction: A function that calculates the probability of having diabetes based on descendants
+- BMI: Body mass index
 - Age
-- Outcome Hastalığa sahip (1) ya da değil (0)
+- Outcome: Have the disease (1) or not (0)
