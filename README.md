@@ -1,18 +1,54 @@
-# Feature_engineering_to_diabetes.csv
-Handling features engineering topics to diabetes.csv
+# Diabetes Prediction using Machine Learning
 
-It is desired to develop a machine learning model that can predict whether people have diabetes when their characteristics are specified. You are expected to perform the necessary data analysis and feature engineering steps before developing the model.
+## Overview
 
-The dataset is part of the large dataset held at the National Institutes of Diabetes-Digestive-Kidney Diseases in the USA.
-Data used for diabetes research on Pima Indian women aged 21 and over living in Phoenix, the 5th largest city of the State of Arizona in the USA.
-The target variable is specified as "outcome"; 1 indicates positive diabetes test result, 0 indicates negative.
+This repository contains a Jupyter Notebook (`diabetes.ipynb`) that demonstrates the process of developing a machine learning model for predicting whether people have diabetes based on their characteristics.
 
-- Pregnancies: number of pregnancies
-- Glucose: 2-hour plasma glucose concentration in the oral glucose tolerance test
-- Blood Pressure: Blood Pressure (mm Hg)
-- SkinThickness
-- Insulin: 2-hour serum insulin (mu U/ml)
-- DiabetesPedigreeFunction: A function that calculates the probability of having diabetes based on descendants
-- BMI: Body mass index
-- Age
-- Outcome: Have the disease (1) or not (0)
+## Dataset
+
+The dataset used in this project is stored in `diabetes.csv`. It contains various features, including age, BMI, insulin level, blood pressure, pregnancies, and more. The target variable is the "Outcome" column, which indicates whether a person has diabetes (1) or not (0).
+
+## Dependencies
+
+Make sure you have the following Python libraries installed to run the code:
+
+- numpy
+- pandas
+- seaborn
+- matplotlib
+- scikit-learn
+
+
+## Data Preprocessing
+
+The Jupyter Notebook begins by loading the dataset and performing data preprocessing steps such as handling missing values, outlier analysis, and creating new variables like age groups, BMI categories, insulin levels, and blood pressure categories.
+
+## Exploratory Data Analysis (EDA)
+
+After preprocessing the data, EDA is performed to gain insights into the data distribution, correlation between features, and other statistical summaries. The Jupyter Notebook includes various visualizations, such as histograms and a correlation matrix heatmap.
+
+## Feature Engineering
+
+The notebook demonstrates how to encode categorical variables using label encoding and one-hot encoding. It also standardizes numerical features using the StandardScaler from scikit-learn.
+
+## Model Building
+
+Two machine learning models are built for diabetes prediction:
+
+1. Random Forest Classifier: This model uses the RandomForestClassifier from scikit-learn to predict the outcome based on the selected features.
+
+2. K-Nearest Neighbors Classifier (KNN): The KNN model is implemented using the KNeighborsClassifier from scikit-learn.
+
+## Model Evaluation
+
+The performance of both models is evaluated using various metrics, including accuracy, precision, recall, F1-score, and ROC-AUC score. Cross-validation is used to obtain more reliable estimates of model performance.
+
+## Hyperparameter Tuning
+
+For the KNN model, hyperparameter tuning is performed using GridSearchCV from scikit-learn to find the optimal number of neighbors (n_neighbors).
+
+## Conclusion
+
+The notebook concludes with the best-performing model and provides instructions for saving and deploying the model for future use.
+
+Feel free to explore the `diabetes.ipynb` notebook for a detailed understanding of the data analysis and machine learning process for diabetes prediction.
